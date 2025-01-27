@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas - Power Life</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        section {
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .recipes-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .recipes-container h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .recipes-container p {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .recipe-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .recipe-card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .recipe-card h3 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+        .recipe-card p {
+            font-size: 0.9rem;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Receitas</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="sobre.html">Sobre Nós</a>
+    <a href="dicas.html">Dicas de Saúde</a>
+    <a href="treinos.html">Treinos</a>
+    <a href="noticias.html">Notícias</a>
+    <a href="contato.html">Contato</a>
+</nav>
+
+<section>
+    <div class="recipes-container">
+        <h1>Descubra Receitas Saudáveis</h1>
+        <p>Explore receitas práticas, deliciosas e nutritivas para ajudar no seu dia a dia.</p>
+
+        <div class="recipe-categories">
+            <div class="recipe-card">
+                <h3>Café da Manhã</h3>
+                <p>Receitas leves e energéticas para começar bem o dia.</p>
+            </div>
+            <div class="recipe-card">
+                <h3>Almoço</h3>
+                <p>Pratos principais nutritivos e balanceados.</p>
+            </div>
+            <div class="recipe-card">
+                <h3>Snacks</h3>
+                <p>Lanches rápidos e saudáveis para manter sua energia.</p>
+            </div>
+            <div class="recipe-card">
+                <h3>Sobremesas</h3>
+                <p>Opções doces com equilíbrio para matar a vontade.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Power Life. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>

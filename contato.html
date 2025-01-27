@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Power Life</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        section {
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .contact-container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .contact-container h1 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            text-align: left;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fale Conosco</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="sobre.html">Sobre Nós</a>
+    <a href="dicas.html">Dicas de Saúde</a>
+    <a href="treinos.html">Treinos</a>
+    <a href="receitas.html">Receitas</a>
+    <a href="noticias.html">Notícias</a>
+</nav>
+
+<section>
+    <div class="contact-container">
+        <h1>Entre em Contato</h1>
+        <p>Estamos prontos para ouvir você! Envie-nos uma mensagem, dúvida ou sugestão.</p>
+
+        <form id="contactForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="subject">Assunto:</label>
+            <input type="text" id="subject" name="subject" required>
+        
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+        
+        <p id="statusMessage" style="color: green;"></p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Power Life. Todos os direitos reservados.</p>
+</footer>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "6tDaz1BSqQ3rA6N7f",
+      });
+   })();
+</script>
+<script>
+    // Inicializar EmailJS com sua Public Key
+    (function() {
+        emailjs.init("6tDaz1BSqQ3rA6N7f"); // Substitua pela sua Public Key
+    })();
+
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Impede o envio padrão do formulário
+
+        const serviceID = "service_2rhpr0k"; // Substitua pelo seu Service ID
+        const templateID = "template_c9zlcqf"; // Substitua pelo seu Template ID
+
+        // Pega os dados do formulário
+        const formData = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            subject: document.getElementById("subject").value,
+            message: document.getElementById("message").value,
+        };
+
+        // Envia o e-mail
+        emailjs.send(serviceID, templateID, formData)
+            .then(() => {
+                document.getElementById("statusMessage").textContent = "Mensagem enviada com sucesso!";
+                document.getElementById("statusMessage").style.color = "green";
+                document.getElementById("contactForm").reset();
+            })
+            .catch(error => {
+                document.getElementById("statusMessage").textContent = "Erro ao enviar mensagem. Tente novamente.";
+                document.getElementById("statusMessage").style.color = "red";
+                console.error("Erro:", error);
+            });
+    });
+</script>
+
+</body>
+</html>

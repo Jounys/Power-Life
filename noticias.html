@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias - Power Life</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        section {
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .news-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .news-container h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .news-container p {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .news-articles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .news-card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .news-card h3 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+        .news-card p {
+            font-size: 0.9rem;
+        }
+        .news-card a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .news-card a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Notícias</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="sobre.html">Sobre Nós</a>
+    <a href="dicas.html">Dicas de Saúde</a>
+    <a href="treinos.html">Treinos</a>
+    <a href="receitas.html">Receitas</a>
+    <a href="contato.html">Contato</a>
+</nav>
+
+<section>
+    <div class="news-container">
+        <h1>Últimas Notícias</h1>
+        <p>Fique por dentro das novidades e atualizações do mundo da saúde, bem-estar e fitness.</p>
+
+        <div class="news-articles">
+            <div class="news-card">
+                <h3>Título da Notícia 1</h3>
+                <p>Resumo curto da notícia para atrair a atenção do leitor.</p>
+                <a href="#">Leia Mais</a>
+            </div>
+            <div class="news-card">
+                <h3>Título da Notícia 2</h3>
+                <p>Resumo curto da notícia para atrair a atenção do leitor.</p>
+                <a href="#">Leia Mais</a>
+            </div>
+            <div class="news-card">
+                <h3>Título da Notícia 3</h3>
+                <p>Resumo curto da notícia para atrair a atenção do leitor.</p>
+                <a href="#">Leia Mais</a>
+            </div>
+            <div class="news-card">
+                <h3>Título da Notícia 4</h3>
+                <p>Resumo curto da notícia para atrair a atenção do leitor.</p>
+                <a href="#">Leia Mais</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Power Life. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>

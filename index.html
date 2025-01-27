@@ -20,78 +20,61 @@
 </head>
 <body>
 
-<header>
-    <img src="imagens/logo-.png" alt="Logo Power Life">
-    <h1>Bem-vindo ao Power Life</h1>
-    <p>Transforme sua saúde e alcance seus objetivos!</p>
-</header>
-
-<nav>
-    <a href="#home">Home</a>
-    <a href="#about">Sobre Nós</a>
-    <a href="dicas.html">Dicas de Saúde</a>
-    <a href="#workouts">Treinos</a>
-    <a href="#recipes">Receitas</a>
-    <a href="#contact">Contato</a>
-</nav>
-
-<section id="home">
-    <div class="home-highlight">
-        <h2>Transforme Sua Vida Hoje</h2>
-        <p>No Power Life, acreditamos que cada passo conta. Comece sua jornada para uma vida mais saudável com nossas dicas, treinos e receitas. Explore agora e inspire-se para alcançar seus objetivos!</p>
-        <button onclick="location.href='#workouts'" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">Comece Agora</button>
-    </div>
-</section>
-
-<section id="about">
-    <h2>Sobre Nós</h2>
-    <p>Somos uma equipe apaixonada por saúde e bem-estar. Nossa missão é ajudar você a alcançar seus objetivos de saúde através de informações confiáveis e motivação contínua.</p>
-</section>
-
-<section id="tips">
-    <h2>Dicas de Saúde</h2>
-    <ul>
-        <li>Manter-se hidratado é essencial para o desempenho físico e saúde geral.</li>
-        <li>Inclua alimentos ricos em nutrientes em sua dieta.</li>
-        <li>Durma bem! O descanso é tão importante quanto o treino.</li>
-    </ul>
-</section>
-
-<section id="workouts">
-    <h2>Treinos e Exercícios</h2>
-    <p>Confira nossos planos de treino:</p>
-    <ul>
-        <li>Iniciante: Caminhada, alongamentos e exercícios leves.</li>
-        <li>Intermediário: Treino funcional e musculação moderada.</li>
-        <li>Avançado: Treinos de alta intensidade e musculação pesada.</li>
-    </ul>
-</section>
-
-<section id="recipes">
-    <h2>Receitas Saudáveis</h2>
-    <p>Descubra receitas práticas e nutritivas, como saladas, smoothies e snacks saudáveis. Em breve, mais novidades!</p>
-</section>
-
-<section id="contact">
-    <h2>Contato</h2>
-    <p>Envie suas dúvidas e sugestões:</p>
-    <form>
-        <label for="name">Nome:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
-
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="message">Mensagem:</label><br>
-        <textarea id="message" name="message" rows="4" required></textarea><br><br>
-
-        <button type="submit">Enviar</button>
-    </form>
-</section>
-
-<footer>
-    <p>&copy; 2025 Power Life. Todos os direitos reservados.</p>
-</footer>
-
-</body>
+    <header>
+        <img src="imagens/logo-.png" alt="Logo Power Life">
+        <h1>Bem-vindo ao Power Life</h1>
+        <p>Transforme sua saúde e alcance seus objetivos!</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre Nós</a>
+        <a href="dicas.html">Dicas de Saúde</a>
+        <a href="treinos.html">Treinos</a>
+        <a href="receitas.html">Receitas</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+    
+    <section id="home">
+        <div class="home-highlight">
+            <h2>Transforme Sua Vida Hoje</h2>
+            <p>No Power Life, acreditamos que cada passo conta. Comece sua jornada para uma vida mais saudável com nossas dicas, treinos e receitas. Explore agora e inspire-se para alcançar seus objetivos!</p>
+            <button onclick="location.href='treinos.html'" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">Comece Agora</button>
+        </div>
+    </section>
+    
+    <!-- Notícias em Destaque -->
+    <section id="highlights">
+        <h2>Notícias em Destaque</h2>
+        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+            <article style="flex: 1; min-width: 250px; border: 1px solid #ddd; padding: 10px; border-radius: 8px; background-color: #f9f9f9;">
+                <h3>Título de Destaque 1</h3>
+                <p>Resumo breve da notícia 1. Saiba mais sobre como melhorar sua saúde agora!</p>
+                <a href="noticia-destaque1.html" style="color: #4CAF50;">Leia mais...</a>
+            </article>
+            <article style="flex: 1; min-width: 250px; border: 1px solid #ddd; padding: 10px; border-radius: 8px; background-color: #f9f9f9;">
+                <h3>Título de Destaque 2</h3>
+                <p>Resumo breve da notícia 2. Novidades imperdíveis para transformar sua rotina!</p>
+                <a href="noticia-destaque2.html" style="color: #4CAF50;">Leia mais...</a>
+            </article>
+        </div>
+    </section>
+    
+    <!-- Últimas Notícias -->
+    <section id="latest-news">
+        <h2>Últimas Notícias</h2>
+        <ul>
+            <li><a href="noticia1.html">Notícia 1: Dicas de nutrição para o ganho de peso saudável.</a></li>
+            <li><a href="noticia2.html">Notícia 2: Novo treino de alta intensidade recomendado por especialistas.</a></li>
+            <li><a href="noticia3.html">Notícia 3: Receitas fáceis para incorporar na sua dieta.</a></li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Power Life. Todos os direitos reservados.</p>
+    </footer>
+    
+    </body>
+    
 </html>
